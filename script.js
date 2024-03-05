@@ -1,5 +1,4 @@
-// 1 1 round
-    // 1.1 Ask player for input
+// Player input
 
 let playerChoice;
 
@@ -19,7 +18,7 @@ function getPlayerChoice() {
     }
 }
 
-    // 1.2 Make computer choose randomly between Rock Paper Scissors
+// Computer choice
 
 let computerChoice;
 
@@ -29,9 +28,7 @@ function getComputerChoice() {
         return computerChoice;
 }
 
-    // 1.3 Compare player result with computer result
-    // 1.4 save round result
-
+// Round Algorithm
 let playerScore = 0;
 let computerScore = 0;
 let rounds = [];
@@ -81,7 +78,7 @@ function playRound(playerSelection, computerSelection) {
 
 
 
-// 5 rounds game
+// Main function
 
 function playGame() {
     for (i = 0; i < 5; i++) {
@@ -109,5 +106,6 @@ function playGame() {
     }
 }
 
+//Start code
 
 playGame();
