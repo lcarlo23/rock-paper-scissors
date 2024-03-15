@@ -29,6 +29,7 @@ function getComputerChoice() {
 }
 
 // Round Algorithm
+
 let playerScore = 0;
 let computerScore = 0;
 let rounds = [];
@@ -75,8 +76,6 @@ function playRound(playerSelection, computerSelection) {
         }
     }
 }
-
-
 
 // Main function
 
