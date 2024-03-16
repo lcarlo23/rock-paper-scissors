@@ -3,10 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Rock, Paper, Scissors</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            margin: auto;
+            text-align: center;
+        }
+        #buttons {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        button {
+            background-color: white;
+            border: 0px solid gray;
+            border-radius: 10px;
+            padding: 10px;
+            width: 200px;
+            margin: 50px;
+            font-size: 1em;
+            text-transform: uppercase;
+            font-weight: bold;
+            box-shadow: 0px 0px 15px #aaa;
+            cursor: pointer;
+            transition: all 0.1s;
+        }
+        button:hover {
+            transform: scale(105%);
+        }
+        .endgame {            
+            cursor: default;
+        }
+        .endgame:hover {
+            transform: scale(100%);
+        }
+        #textBox {
+            margin: auto;
+            text-align: center;
+        }
+        #score {
+            font-size: 2em;
+            font-weight: bold;
+        }
+        #result {
+            height: 100px;
+        }
+        #winner {
+            height: 100px;
+        }
+        #restart {
+            visibility: hidden;
+        }
+    </style>
 </head>
-<body style="background-color: #222;">
-    
+<body>
+    <h1>Rock, Paper, Scissors!</h1>
+    <h2 id="round">ROUND #1</h2>
+    <div id="buttons">
+        <button>Rock</button>
+        <button>Paper</button>
+        <button>Scissors</button>
+    </div>
+    <div id="textBox">
+        <h2>Score</h2>
+        <p id="score">0 - 0</p>
+        <h3 id="result"></h3>
+        <h2 id="winner"></h2>
+        <button id="restart">Restart</button>
+    </div>
 </body>
 </html>
